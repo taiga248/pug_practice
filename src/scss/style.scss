@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 32px;
+}
+.test {
+  color: #444;
+  font-size: 32px;
+  &__link {
+    font-size: 24px;
+    color: #aaa;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,43 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    title Pug
+    link(rel="stylesheet", href="style.min.css")
+  body
+    p.title Pug Test
+    p.test#test テスト
+      a.test__link(href="#") リンク
+  
+    input#btn(type="button" value="ボタン" disabled=true)
+    input#btn(type="button" value="ボタン" disabled=false)
+
+    h3 変数
+    - var link = "https://google.com";
+    a(href=link) Google
+  
+    h3 Switch文
+    - var text = "B";
+    case text
+      when "A"
+        p A
+      when "B"
+        p B
+      default
+        p default
+
+    h3 if文
+    - var text = 'hoge'
+      if text === 'hoge' 
+        p hoge
+      else
+        p not hoge
+
+    ul 
+      - for (var i = 0; i < 3; i++) { 
+       li リスト
+      - }
+
+    include _includes/_footer.pug 
+    //- コンパイル後表示されないコメント
+    // 表示されるコメント
