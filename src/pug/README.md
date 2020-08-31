@@ -18,13 +18,13 @@ section
 
 ## 属性にはカッコ
 
-```
+```:index.pug
 a(href="#") リンク
 label(for="hoge") ラベル
 input(type="button" value="ボタン")
 ```
 
-```
+```:index.html
 <a href="#">リンク</a>
 <label for="hoge">ラベル</label>
 <input id="btn" type="button" value="ボタン">
@@ -97,16 +97,16 @@ ul
 
 ejs みたいに使いまわせる
 
-```::footer.pug
+```:_includes/footer.pug
 footer
   span &copy; 2020 - Taiga
 ```
 
-```::index.pug
+```:index.pug
 include _includes/footer.pug
 ```
 
-```::index.html
+```:index.html
 <footer><span>&copy; 2020 - Taiga</span></footer>
 ```
 
